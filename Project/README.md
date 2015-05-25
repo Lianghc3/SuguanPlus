@@ -1,12 +1,18 @@
 基于Meteor框架。
 
 ## 目录树
-lib
-  |collections
-client
-  |
-server
-  |
+```bash
+├─client 客户端
+│  ├─ls 客户端脚本
+│  ├─sass 客户度端样式
+│  └─templates 模板
+│      └─_includes
+├─lib
+│  ├─collections 数据模型/集合
+|  └─router.ls 路由
+├─public 静态资源
+└─server 服务器端
+```
 
 ## 语言
 LiveScript
