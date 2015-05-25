@@ -1,0 +1,22 @@
+<template name="layout">
+  <nav>
+    <div class="nav-wrapper">
+      <a href="/" class="brand-logo">HomeWork</a>
+      <ul class="right hide-on-med-and-down">
+        <li><a href="/assign"><i class="mdi-content-create"></i></a></li>
+        <li><a href="#"><i class="mdi-action-account-circle"></i></a></li>
+        <li>{{#if currentUser}}
+              {{currentUser.profile.name}}
+            {{/if}}
+        </li>
+        <li>
+          <a href="/signout">
+            <i class="mdi-action-exit-to-app"></i>
+          </a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+  
+    {{> yield}}
+</template>

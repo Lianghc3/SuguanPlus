@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>宿管中心</title>
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/proto.css">
+  <script src="js/jquery.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+</head>
+<body>
+  <nav class="navbar navbar-default">
+    <div class="container-fluid">
+      <!-- Brand and toggle get grouped for better mobile display -->
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="#">宿管Plus</a>
+      </div>
+
+      <!-- Collect the nav links, forms, and other content for toggling -->
+      <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+        <ul class="nav navbar-nav">
+          <li class="active"><a href="宿管中心.html"><span class="glyphicon glyphicon-th" aria-hidden="true"></span> 所有宿舍 <span class="sr-only">(current)</span></a></li>
+          <li><a href="缴费单.html"><span class="glyphicon glyphicon-list-alt" aria-hidden="true"></span> 缴费单</a></li>
+          <li class="dropdown">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false"><span class="glyphicon glyphicon-send" aria-hidden="true"></span> 发布<span class="caret"></span></a>
+            <ul class="dropdown-menu" role="menu">
+              <li><a href="#"><span class="glyphicon glyphicon-tint" aria-hidden="true"></span> 水电费提醒</a></li>
+              <li><a href="#"><span class="glyphicon glyphicon-envelope" aria-hidden="true"></span> 邮件/快递提醒</a></li>
+              <li><a href="#"><span class="glyphicon glyphicon-bell" aria-hidden="true"></span> 消息</a></li>
+              <li class="divider"></li>
+              <li><a href="#"><span class="glyphicon glyphicon-bullhorn" aria-hidden="true"></span> 宿舍公告</a></li>
+            </ul>
+          </li>
+        </ul>
+        <form class="navbar-form navbar-left" role="search">
+          <div class="form-group">
+            <input type="text" class="form-control" placeholder="Search">
+          </div>
+          <button type="submit" class="btn btn-default">Submit</button>
+        </form>
+        <ul class="nav navbar-nav navbar-right">
+          <li class="dropdown">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Dropdown <span class="caret"></span></a>
+            <ul class="dropdown-menu" role="menu">
+              <li><a href="#">Action</a></li>
+              <li><a href="#">Another action</a></li>
+              <li><a href="#">Something else here</a></li>
+              <li class="divider"></li>
+              <li><a href="#">Separated link</a></li>
+            </ul>
+          </li>
+          <li><a href="#"><span class="glyphicon glyphicon-log-out" aria-hidden="true"></span> 登出</a></li>
+        </ul>
+      </div><!-- /.navbar-collapse -->
+    </div><!-- /.container-fluid -->
+  </nav>
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-md-10">
+        <!-- (.row>(.col-md-2>button.btn.btn-default[data-toggle="popover"][data-trigger="focus"][title="宿舍信息"][data-content="关于宿舍的一些信息"]{$$$})*6)*5 -->
+        <div class="row" style="margin-bottom: 30px;">
+          <div class="col-md-2"><button data-toggle="tooltip" data-placement="top" title="点击选择整层楼" class="btn btn-lg btn-active btn-head">2楼</button></div>
+          <div class="col-md-2"><button data-toggle="tooltip" data-placement="top" title="点击选择整层楼" class="btn btn-lg btn-active btn-head">3楼</button></div>
+          <div class="col-md-2"><button data-toggle="tooltip" data-placement="top" title="点击选择整层楼" class="btn btn-lg btn-active btn-head">4楼</button></div>
+          <div class="col-md-2"><button data-toggle="tooltip" data-placement="top" title="点击选择整层楼" class="btn btn-lg btn-active btn-head">5楼</button></div>
+          <div class="col-md-2"><button data-toggle="tooltip" data-placement="top" title="点击选择整层楼" class="btn btn-lg btn-active btn-head">6楼</button></div>
+          <div class="col-md-2"><button data-toggle="tooltip" data-placement="top" title="点击选择整层楼" class="btn btn-lg btn-active btn-head">7楼</button></div>
+        </div>
+        <div class="row">
+          <div class="col-md-2">
+            <div class="btn-group-vertical" role="group">
+              <a class="btn btn-default dorm-btn" data-toggle="popover" data-trigger="hover" title="宿舍信息" data-container="body" data-content="宿舍成员：张三、李四、等等">201</a>
+              <a class="btn btn-default dorm-btn" data-toggle="popover" data-trigger="hover" title="宿舍信息" data-container="body" data-content="关于宿舍的一些信息">202</a>
+              <a class="btn btn-default dorm-btn" data-toggle="popover" data-trigger="hover" title="宿舍信息" data-container="body" data-content="关于宿舍的一些信息">203</a>
+              <a class="btn btn-default dorm-btn" data-toggle="popover" data-trigger="hover" title="宿舍信息" data-container="body" data-content="关于宿舍的一些信息">204</a>
+              <a class="btn btn-default dorm-btn" data-toggle="popover" data-trigger="hover" title="宿舍信息" data-container="body" data-content="关于宿舍的一些信息">205</a>
+              <a class="btn btn-default dorm-btn" data-toggle="popover" data-trigger="hover" title="宿舍信息" data-container="body" data-content="关于宿舍的一些信息">206</a>
+              <a class="btn btn-default dorm-btn" data-toggle="popover" data-trigger="hover" title="宿舍信息" data-container="body" data-content="关于宿舍的一些信息">207</a>
+              <a class="btn btn-default dorm-btn" data-toggle="popover" data-trigger="hover" title="宿舍信息" data-container="body" data-content="关于宿舍的一些信息">208</a>
+              <a class="btn btn-default dorm-btn" data-toggle="popover" data-trigger="hover" title="宿舍信息" data-container="body" data-content="关于宿舍的一些信息">209 <span class="label label-info">未缴费</span></a>
+              <a class="btn btn-default dorm-btn" data-toggle="popover" data-trigger="hover" title="宿舍信息" data-container="body" data-content="关于宿舍的一些信息">210</a>
+              <a class="btn btn-default dorm-btn" data-toggle="popover" data-trigger="hover" title="宿舍信息" data-container="body" data-content="关于宿舍的一些信息">211</a>
+              <a class="btn btn-default dorm-btn" data-toggle="popover" data-trigger="hover" title="宿舍信息" data-container="body" data-content="关于宿舍的一些信息">212</a>
+              <a class="btn btn-default dorm-btn" data-toggle="popover" data-trigger="hover" title="宿舍信息" data-container="body" data-content="关于宿舍的一些信息">213</a>
+              <a class="btn btn-default dorm-btn" data-toggle="popover" data-trigger="hover" title="宿舍信息" data-container="body" data-content="关于宿舍的一些信息">214</a>
+              <a class="btn btn-default dorm-btn" data-toggle="popover" data-trigger="hover" title="宿舍信息" data-container="body" data-content="关于宿舍的一些信息">215</a>
+              <a class="btn btn-default dorm-btn" data-toggle="popover" data-trigger="hover" title="宿舍信息" data-container="body" data-content="关于宿舍的一些信息">216</a>
+              <a class="btn btn-default dorm-btn" data-toggle="popover" data-trigger="hover" title="宿舍信息" data-container="body" data-content="关于宿舍的一些信息">217</a>
+              <a class="btn btn-default dorm-btn" data-toggle="popover" data-trigger="hover" title="宿舍信息" data-container="body" data-content="关于宿舍的一些信息">218</a>
+              <a class="btn btn-default dorm-btn" data-toggle="popover" data-trigger="hover" title="宿舍信息" data-container="body" data-content="关于宿舍的一些信息">219</a>
+              <a class="btn btn-default dorm-btn" data-toggle="popover" data-trigger="hover" title="宿舍信息" data-container="body" data-content="关于宿舍的一些信息">220</a>
+              <a class="btn btn-default dorm-btn" data-toggle="popover" data-trigger="hover" title="宿舍信息" data-container="body" data-content="关于宿舍的一些信息">221</a>
+              <a class="btn btn-default dorm-btn" data-toggle="popover" data-trigger="hover" title="宿舍信息" data-container="body" data-content="关于宿舍的一些信息">222</a>
+              <a class="btn btn-default dorm-btn" data-toggle="popover" data-trigger="hover" title="宿舍信息" data-container="body" data-content="关于宿舍的一些信息">223</a>
+              <a class="btn btn-default dorm-btn" data-toggle="popover" data-trigger="hover" title="宿舍信息" data-container="body" data-content="关于宿舍的一些信息">224</a>
+              <a class="btn btn-default dorm-btn" data-toggle="popover" data-trigger="hover" title="宿舍信息" data-container="body" data-content="关于宿舍的一些信息">225</a>
+              <a class="btn btn-default dorm-btn" data-toggle="popover" data-trigger="hover" title="宿舍信息" data-container="body" data-content="关于宿舍的一些信息">226</a>
+              <a class="btn btn-default dorm-btn" data-toggle="popover" data-trigger="hover" title="宿舍信息" data-container="body" data-content="关于宿舍的一些信息">227</a>
+              <a class="btn btn-default dorm-btn" data-toggle="popover" data-trigger="hover" title="宿舍信息" data-container="body" data-content="关于宿舍的一些信息">228</a>
+              <a class="btn btn-default dorm-btn" data-toggle="popover" data-trigger="hover" title="宿舍信息" data-container="body" data-content="关于宿舍的一些信息">229</a>
+            </div>
+          </div>
+          <div class="col-md-2">
+            <div class="btn-group-vertical" role="group">
+              <a class="btn btn-default dorm-btn" data-toggle="popover" data-trigger="hover" title="宿舍信息" data-container="body" data-content="关于宿舍的一些信息">301</a>
+              <a class="btn btn-default dorm-btn" data-toggle="popover" data-trigger="hover" title="宿舍信息" data-container="body" data-content="关于宿舍的一些信息">302</a>
+              <a class="btn btn-default dorm-btn" data-toggle="popover" data-trigger="hover" title="宿舍信息" data-container="body" data-content="关于宿舍的一些信息">303</a>
+              <a class="btn btn-default dorm-btn" data-toggle="popover" data-trigger="hover" title="宿舍信息" data-container="body" data-content="关于宿舍的一些信息">304</a>
+              <a class="btn btn-default dorm-btn" data-toggle="popover" data-trigger="hover" title="宿舍信息" data-container="body" data-content="关于宿舍的一些信息">305</a>
+              <a class="btn btn-default dorm-btn" data-toggle="popover" data-trigger="hover" title="宿舍信息" data-container="body" data-content="关于宿舍的一些信息">306</a>
+              <a class="btn btn-default dorm-btn" data-toggle="popover" data-trigger="hover" title="宿舍信息" data-container="body" data-content="关于宿舍的一些信息">307</a>
+              <a class="btn btn-default dorm-btn" data-toggle="popover" data-trigger="hover" title="宿舍信息" data-container="body" data-content="关于宿舍的一些信息">308</a>
+              <a class="btn btn-default dorm-btn" data-toggle="popover" data-trigger="hover" title="宿舍信息" data-container="body" data-content="关于宿舍的一些信息">309</a>
+              <a class="btn btn-default dorm-btn" data-toggle="popover" data-trigger="hover" title="宿舍信息" data-container="body" data-content="关于宿舍的一些信息">310</a>
+              <a class="btn btn-default dorm-btn" data-toggle="popover" data-trigger="hover" title="宿舍信息" data-container="body" data-content="关于宿舍的一些信息">311</a>
+              <a class="btn btn-default dorm-btn" data-toggle="popover" data-trigger="hover" title="宿舍信息" data-container="body" data-content="关于宿舍的一些信息">312</a>
+              <a class="btn btn-default dorm-btn" data-toggle="popover" data-trigger="hover" title="宿舍信息" data-container="body" data-content="关于宿舍的一些信息">313</a>
+              <a class="btn btn-default dorm-btn" data-toggle="popover" data-trigger="hover" title="宿舍信息" data-container="body" data-content="关于宿舍的一些信息">314</a>
+              <a class="btn btn-default dorm-btn" data-toggle="popover" data-trigger="hover" title="宿舍信息" data-container="body" data-content="关于宿舍的一些信息">315</a>
+              <a class="btn btn-default dorm-btn" data-toggle="popover" data-trigger="hover" title="宿舍信息" data-container="body" data-content="关于宿舍的一些信息">316</a>
+              <a class="btn btn-default dorm-btn" data-toggle="popover" data-trigger="hover" title="宿舍信息" data-container="body" data-content="关于宿舍的一些信息">317</a>
+              <a class="btn btn-default dorm-btn" data-toggle="popover" data-trigger="hover" title="宿舍信息" data-container="body" data-content="关于宿舍的一些信息">318</a>
+              <a class="btn btn-default dorm-btn" data-toggle="popover" data-trigger="hover" title="宿舍信息" data-container="body" data-content="关于宿舍的一些信息">319</a>
+              <a class="btn btn-default dorm-btn" data-toggle="popover" data-trigger="hover" title="宿舍信息" data-container="body" data-content="关于宿舍的一些信息">320</a>
+              <a class="btn btn-default dorm-btn" data-toggle="popover" data-trigger="hover" title="宿舍信息" data-container="body" data-content="关于宿舍的一些信息">321</a>
+              <a class="btn btn-default dorm-btn" data-toggle="popover" data-trigger="hover" title="宿舍信息" data-container="body" data-content="关于宿舍的一些信息">322</a>
+              <a class="btn btn-default dorm-btn" data-toggle="popover" data-trigger="hover" title="宿舍信息" data-container="body" data-content="关于宿舍的一些信息">323</a>
+              <a class="btn btn-default dorm-btn" data-toggle="popover" data-trigger="hover" title="宿舍信息" data-container="body" data-content="关于宿舍的一些信息">324</a>
+              <a class="btn btn-default dorm-btn" data-toggle="popover" data-trigger="hover" title="宿舍信息" data-container="body" data-content="关于宿舍的一些信息">325</a>
+              <a class="btn btn-default dorm-btn" data-toggle="popover" data-trigger="hover" title="宿舍信息" data-container="body" data-content="关于宿舍的一些信息">326</a>
+              <a class="btn btn-default dorm-btn" data-toggle="popover" data-trigger="hover" title="宿舍信息" data-container="body" data-content="关于宿舍的一些信息">327</a>
+              <a class="btn btn-default dorm-btn" data-toggle="popover" data-trigger="hover" title="宿舍信息" data-container="body" data-content="关于宿舍的一些信息">328</a>
+              <a class="btn btn-default dorm-btn" data-toggle="popover" data-trigger="hover" title="宿舍信息" data-container="body" data-content="关于宿舍的一些信息">329</a>
+            </div>
+          </div>
+          <div class="col-md-2">
+            <div class="btn-group-vertical" role="group">
+              <a class="btn btn-default dorm-btn" data-toggle="popover" data-trigger="hover" title="宿舍信息" data-container="body" data-content="关于宿舍的一些信息">401</a>
+              <a class="btn btn-default dorm-btn" data-toggle="popover" data-trigger="hover" title="宿舍信息" data-container="body" data-content="关于宿舍的一些信息">402</a>
+              <a class="btn btn-default dorm-btn" data-toggle="popover" data-trigger="hover" title="宿舍信息" data-container="body" data-content="关于宿舍的一些信息">403</a>
+              <a class="btn btn-default dorm-btn" data-toggle="popover" data-trigger="hover" title="宿舍信息" data-container="body" data-content="关于宿舍的一些信息">404</a>
+              <a class="btn btn-default dorm-btn" data-toggle="popover" data-trigger="hover" title="宿舍信息" data-container="body" data-content="关于宿舍的一些信息">405</a>
+              <a class="btn btn-default dorm-btn" data-toggle="popover" data-trigger="hover" title="宿舍信息" data-container="body" data-content="关于宿舍的一些信息">406</a>
+              <a class="btn btn-default dorm-btn" data-toggle="popover" data-trigger="hover" title="宿舍信息" data-container="body" data-content="关于宿舍的一些信息">407</a>
+              <a class="btn btn-default dorm-btn" data-toggle="popover" data-trigger="hover" title="宿舍信息" data-container="body" data-content="关于宿舍的一些信息">408</a>
+              <a class="btn btn-default dorm-btn" data-toggle="popover" data-trigger="hover" title="宿舍信息" data-container="body" data-content="关于宿舍的一些信息">409</a>
+              <a class="btn btn-default dorm-btn" data-toggle="popover" data-trigger="hover" title="宿舍信息" data-container="body" data-content="关于宿舍的一些信息">410</a>
+              <a class="btn btn-default dorm-btn" data-toggle="popover" data-trigger="hover" title="宿舍信息" data-container="body" data-content="关于宿舍的一些信息">411</a>
+              <a class="btn btn-default dorm-btn" data-toggle="popover" data-trigger="hover" title="宿舍信息" data-container="body" data-content="关于宿舍的一些信息">412</a>
+              <a class="btn btn-default dorm-btn" data-toggle="popover" data-trigger="hover" title="宿舍信息" data-container="body" data-content="关于宿舍的一些信息">413</a>
+              <a class="btn btn-default dorm-btn" data-toggle="popover" data-trigger="hover" title="宿舍信息" data-container="body" data-content="关于宿舍的一些信息">414</a>
+              <a class="btn btn-default dorm-btn" data-toggle="popover" data-trigger="hover" title="宿舍信息" data-container="body" data-content="关于宿舍的一些信息">415</a>
+              <a class="btn btn-default dorm-btn" data-toggle="popover" data-trigger="hover" title="宿舍信息" data-container="body" data-content="关于宿舍的一些信息">416</a>
+              <a class="btn btn-default dorm-btn" data-toggle="popover" data-trigger="hover" title="宿舍信息" data-container="body" data-content="关于宿舍的一些信息">417</a>
+              <a class="btn btn-default dorm-btn" data-toggle="popover" data-trigger="hover" title="宿舍信息" data-container="body" data-content="关于宿舍的一些信息">418</a>
+              <a class="btn btn-default dorm-btn" data-toggle="popover" data-trigger="hover" title="宿舍信息" data-container="body" data-content="关于宿舍的一些信息">419</a>
+              <a class="btn btn-default dorm-btn" data-toggle="popover" data-trigger="hover" title="宿舍信息" data-container="body" data-content="关于宿舍的一些信息">420</a>
+              <a class="btn btn-default dorm-btn" data-toggle="popover" data-trigger="hover" title="宿舍信息" data-container="body" data-content="关于宿舍的一些信息">421</a>
+              <a class="btn btn-default dorm-btn" data-toggle="popover" data-trigger="hover" title="宿舍信息" data-container="body" data-content="关于宿舍的一些信息">422</a>
+              <a class="btn btn-default dorm-btn" data-toggle="popover" data-trigger="hover" title="宿舍信息" data-container="body" data-content="关于宿舍的一些信息">423</a>
+              <a class="btn btn-default dorm-btn" data-toggle="popover" data-trigger="hover" title="宿舍信息" data-container="body" data-content="关于宿舍的一些信息">424</a>
+              <a class="btn btn-default dorm-btn" data-toggle="popover" data-trigger="hover" title="宿舍信息" data-container="body" data-content="关于宿舍的一些信息">425</a>
+              <a class="btn btn-default dorm-btn" data-toggle="popover" data-trigger="hover" title="宿舍信息" data-container="body" data-content="关于宿舍的一些信息">426 <span class="label label-info">未缴费</span></a>
+              <a class="btn btn-default dorm-btn" data-toggle="popover" data-trigger="hover" title="宿舍信息" data-container="body" data-content="关于宿舍的一些信息">427</a>
+              <a class="btn btn-default dorm-btn" data-toggle="popover" data-trigger="hover" title="宿舍信息" data-container="body" data-content="关于宿舍的一些信息">428</a>
+              <a class="btn btn-default dorm-btn" data-toggle="popover" data-trigger="hover" title="宿舍信息" data-container="body" data-content="关于宿舍的一些信息">429</a>
+            </div>
+          </div>
+          <div class="col-md-2">
+            <div class="btn-group-vertical" role="group">
+              <a class="btn btn-default dorm-btn" data-toggle="popover" data-trigger="hover" title="宿舍信息" data-container="body" data-content="关于宿舍的一些信息">501</a>
+              <a class="btn btn-default dorm-btn" data-toggle="popover" data-trigger="hover" title="宿舍信息" data-container="body" data-content="关于宿舍的一些信息">502</a>
+              <a class="btn btn-default dorm-btn" data-toggle="popover" data-trigger="hover" title="宿舍信息" data-container="body" data-content="关于宿舍的一些信息">503</a>
+              <a class="btn btn-default dorm-btn" data-toggle="popover" data-trigger="hover" title="宿舍信息" data-container="body" data-content="关于宿舍的一些信息">504</a>
+              <a class="btn btn-default dorm-btn" data-toggle="popover" data-trigger="hover" title="宿舍信息" data-container="body" data-content="关于宿舍的一些信息">505</a>
+              <a class="btn btn-default dorm-btn" data-toggle="popover" data-trigger="hover" title="宿舍信息" data-container="body" data-content="关于宿舍的一些信息">506</a>
+              <a class="btn btn-default dorm-btn" data-toggle="popover" data-trigger="hover" title="宿舍信息" data-container="body" data-content="关于宿舍的一些信息">507</a>
+              <a class="btn btn-default dorm-btn" data-toggle="popover" data-trigger="hover" title="宿舍信息" data-container="body" data-content="关于宿舍的一些信息">508</a>
+              <a class="btn btn-default dorm-btn" data-toggle="popover" data-trigger="hover" title="宿舍信息" data-container="body" data-content="关于宿舍的一些信息">509</a>
+              <a class="btn btn-default dorm-btn" data-toggle="popover" data-trigger="hover" title="宿舍信息" data-container="body" data-content="关于宿舍的一些信息">510</a>
+              <a class="btn btn-default dorm-btn" data-toggle="popover" data-trigger="hover" title="宿舍信息" data-container="body" data-content="关于宿舍的一些信息">511</a>
+              <a class="btn btn-default dorm-btn" data-toggle="popover" data-trigger="hover" title="宿舍信息" data-container="body" data-content="关于宿舍的一些信息">512</a>
+              <a class="btn btn-default dorm-btn" data-toggle="popover" data-trigger="hover" title="宿舍信息" data-container="body" data-content="关于宿舍的一些信息">513</a>
+              <a class="btn btn-default dorm-btn" data-toggle="popover" data-trigger="hover" title="宿舍信息" data-container="body" data-content="关于宿舍的一些信息">514</a>
+              <a class="btn btn-default dorm-btn" data-toggle="popover" data-trigger="hover" title="宿舍信息" data-container="body" data-content="关于宿舍的一些信息">515</a>
+              <a class="btn btn-default dorm-btn" data-toggle="popover" data-trigger="hover" title="宿舍信息" data-container="body" data-content="关于宿舍的一些信息">516</a>
+              <a class="btn btn-default dorm-btn" data-toggle="popover" data-trigger="hover" title="宿舍信息" data-container="body" data-content="关于宿舍的一些信息">517</a>
+              <a class="btn btn-default dorm-btn" data-toggle="popover" data-trigger="hover" title="宿舍信息" data-container="body" data-content="关于宿舍的一些信息">518</a>
+              <a class="btn btn-default dorm-btn" data-toggle="popover" data-trigger="hover" title="宿舍信息" data-container="body" data-content="关于宿舍的一些信息">519</a>
+              <a class="btn btn-default dorm-btn" data-toggle="popover" data-trigger="hover" title="宿舍信息" data-container="body" data-content="关于宿舍的一些信息">520</a>
+              <a class="btn btn-default dorm-btn" data-toggle="popover" data-trigger="hover" title="宿舍信息" data-container="body" data-content="关于宿舍的一些信息">521</a>
+              <a class="btn btn-default dorm-btn" data-toggle="popover" data-trigger="hover" title="宿舍信息" data-container="body" data-content="关于宿舍的一些信息">522</a>
+              <a class="btn btn-default dorm-btn" data-toggle="popover" data-trigger="hover" title="宿舍信息" data-container="body" data-content="关于宿舍的一些信息">523</a>
+              <a class="btn btn-default dorm-btn" data-toggle="popover" data-trigger="hover" title="宿舍信息" data-container="body" data-content="关于宿舍的一些信息">524</a>
+              <a class="btn btn-default dorm-btn" data-toggle="popover" data-trigger="hover" title="宿舍信息" data-container="body" data-content="关于宿舍的一些信息">525</a>
+              <a class="btn btn-default dorm-btn" data-toggle="popover" data-trigger="hover" title="宿舍信息" data-container="body" data-content="关于宿舍的一些信息">526</a>
+              <a class="btn btn-default dorm-btn" data-toggle="popover" data-trigger="hover" title="宿舍信息" data-container="body" data-content="关于宿舍的一些信息">527</a>
+              <a class="btn btn-default dorm-btn" data-toggle="popover" data-trigger="hover" title="宿舍信息" data-container="body" data-content="关于宿舍的一些信息">528</a>
+              <a class="btn btn-default dorm-btn" data-toggle="popover" data-trigger="hover" title="宿舍信息" data-container="body" data-content="关于宿舍的一些信息">529</a>
+            </div>
+          </div>
+          <div class="col-md-2">
+            <div class="btn-group-vertical" role="group">
+              <a class="btn btn-default dorm-btn" data-toggle="popover" data-trigger="hover" title="宿舍信息" data-container="body" data-content="关于宿舍的一些信息">601</a>
+              <a class="btn btn-default dorm-btn" data-toggle="popover" data-trigger="hover" title="宿舍信息" data-container="body" data-content="关于宿舍的一些信息">602</a>
+              <a class="btn btn-default dorm-btn" data-toggle="popover" data-trigger="hover" title="宿舍信息" data-container="body" data-content="关于宿舍的一些信息">603</a>
+              <a class="btn btn-default dorm-btn" data-toggle="popover" data-trigger="hover" title="宿舍信息" data-container="body" data-content="关于宿舍的一些信息">604</a>
+              <a class="btn btn-default dorm-btn" data-toggle="popover" data-trigger="hover" title="宿舍信息" data-container="body" data-content="关于宿舍的一些信息">605</a>
+              <a class="btn btn-default dorm-btn" data-toggle="popover" data-trigger="hover" title="宿舍信息" data-container="body" data-content="关于宿舍的一些信息">606</a>
+              <a class="btn btn-default dorm-btn" data-toggle="popover" data-trigger="hover" title="宿舍信息" data-container="body" data-content="关于宿舍的一些信息">607</a>
+              <a class="btn btn-default dorm-btn" data-toggle="popover" data-trigger="hover" title="宿舍信息" data-container="body" data-content="关于宿舍的一些信息">608</a>
+              <a class="btn btn-default dorm-btn" data-toggle="popover" data-trigger="hover" title="宿舍信息" data-container="body" data-content="关于宿舍的一些信息">609</a>
+              <a class="btn btn-default dorm-btn" data-toggle="popover" data-trigger="hover" title="宿舍信息" data-container="body" data-content="关于宿舍的一些信息">610</a>
+              <a class="btn btn-default dorm-btn" data-toggle="popover" data-trigger="hover" title="宿舍信息" data-container="body" data-content="关于宿舍的一些信息">611</a>
+              <a class="btn btn-default dorm-btn" data-toggle="popover" data-trigger="hover" title="宿舍信息" data-container="body" data-content="关于宿舍的一些信息">612</a>
+              <a class="btn btn-default dorm-btn" data-toggle="popover" data-trigger="hover" title="宿舍信息" data-container="body" data-content="关于宿舍的一些信息">613</a>
+              <a class="btn btn-default dorm-btn" data-toggle="popover" data-trigger="hover" title="宿舍信息" data-container="body" data-content="关于宿舍的一些信息">614</a>
+              <a class="btn btn-default dorm-btn" data-toggle="popover" data-trigger="hover" title="宿舍信息" data-container="body" data-content="关于宿舍的一些信息">615</a>
+              <a class="btn btn-default dorm-btn" data-toggle="popover" data-trigger="hover" title="宿舍信息" data-container="body" data-content="关于宿舍的一些信息">616</a>
+              <a class="btn btn-default dorm-btn" data-toggle="popover" data-trigger="hover" title="宿舍信息" data-container="body" data-content="关于宿舍的一些信息">617</a>
+              <a class="btn btn-default dorm-btn" data-toggle="popover" data-trigger="hover" title="宿舍信息" data-container="body" data-content="关于宿舍的一些信息">618</a>
+              <a class="btn btn-default dorm-btn" data-toggle="popover" data-trigger="hover" title="宿舍信息" data-container="body" data-content="关于宿舍的一些信息">619</a>
+              <a class="btn btn-default dorm-btn" data-toggle="popover" data-trigger="hover" title="宿舍信息" data-container="body" data-content="关于宿舍的一些信息">620</a>
+              <a class="btn btn-default dorm-btn" data-toggle="popover" data-trigger="hover" title="宿舍信息" data-container="body" data-content="关于宿舍的一些信息">621</a>
+              <a class="btn btn-default dorm-btn" data-toggle="popover" data-trigger="hover" title="宿舍信息" data-container="body" data-content="关于宿舍的一些信息">622</a>
+              <a class="btn btn-default dorm-btn" data-toggle="popover" data-trigger="hover" title="宿舍信息" data-container="body" data-content="关于宿舍的一些信息">623</a>
+              <a class="btn btn-default dorm-btn" data-toggle="popover" data-trigger="hover" title="宿舍信息" data-container="body" data-content="关于宿舍的一些信息">624</a>
+              <a class="btn btn-default dorm-btn" data-toggle="popover" data-trigger="hover" title="宿舍信息" data-container="body" data-content="关于宿舍的一些信息">625</a>
+              <a class="btn btn-default dorm-btn" data-toggle="popover" data-trigger="hover" title="宿舍信息" data-container="body" data-content="关于宿舍的一些信息">626</a>
+              <a class="btn btn-default dorm-btn" data-toggle="popover" data-trigger="hover" title="宿舍信息" data-container="body" data-content="关于宿舍的一些信息">627</a>
+              <a class="btn btn-default dorm-btn" data-toggle="popover" data-trigger="hover" title="宿舍信息" data-container="body" data-content="关于宿舍的一些信息">628</a>
+              <a class="btn btn-default dorm-btn" data-toggle="popover" data-trigger="hover" title="宿舍信息" data-container="body" data-content="关于宿舍的一些信息">629</a>
+            </div>
+          </div>
+          <div class="col-md-2">
+            <div class="btn-group-vertical" role="group">
+              <a class="btn btn-default dorm-btn" data-toggle="popover" data-trigger="hover" title="宿舍信息" data-container="body" data-content="关于宿舍的一些信息">201</a>
+              <a class="btn btn-default dorm-btn" data-toggle="popover" data-trigger="hover" title="宿舍信息" data-container="body" data-content="关于宿舍的一些信息">202</a>
+              <a class="btn btn-default dorm-btn" data-toggle="popover" data-trigger="hover" title="宿舍信息" data-container="body" data-content="关于宿舍的一些信息">203</a>
+              <a class="btn btn-default dorm-btn" data-toggle="popover" data-trigger="hover" title="宿舍信息" data-container="body" data-content="关于宿舍的一些信息">204</a>
+              <a class="btn btn-default dorm-btn" data-toggle="popover" data-trigger="hover" title="宿舍信息" data-container="body" data-content="关于宿舍的一些信息">205</a>
+              <a class="btn btn-default dorm-btn" data-toggle="popover" data-trigger="hover" title="宿舍信息" data-container="body" data-content="关于宿舍的一些信息">206</a>
+              <a class="btn btn-default dorm-btn" data-toggle="popover" data-trigger="hover" title="宿舍信息" data-container="body" data-content="关于宿舍的一些信息">207</a>
+              <a class="btn btn-default dorm-btn" data-toggle="popover" data-trigger="hover" title="宿舍信息" data-container="body" data-content="关于宿舍的一些信息">208</a>
+              <a class="btn btn-default dorm-btn" data-toggle="popover" data-trigger="hover" title="宿舍信息" data-container="body" data-content="关于宿舍的一些信息">209</a>
+              <a class="btn btn-default dorm-btn" data-toggle="popover" data-trigger="hover" title="宿舍信息" data-container="body" data-content="关于宿舍的一些信息">210</a>
+              <a class="btn btn-default dorm-btn" data-toggle="popover" data-trigger="hover" title="宿舍信息" data-container="body" data-content="关于宿舍的一些信息">211</a>
+              <a class="btn btn-default dorm-btn" data-toggle="popover" data-trigger="hover" title="宿舍信息" data-container="body" data-content="关于宿舍的一些信息">212</a>
+              <a class="btn btn-default dorm-btn" data-toggle="popover" data-trigger="hover" title="宿舍信息" data-container="body" data-content="关于宿舍的一些信息">213</a>
+              <a class="btn btn-default dorm-btn" data-toggle="popover" data-trigger="hover" title="宿舍信息" data-container="body" data-content="关于宿舍的一些信息">214</a>
+              <a class="btn btn-default dorm-btn" data-toggle="popover" data-trigger="hover" title="宿舍信息" data-container="body" data-content="关于宿舍的一些信息">215</a>
+              <a class="btn btn-default dorm-btn" data-toggle="popover" data-trigger="hover" title="宿舍信息" data-container="body" data-content="关于宿舍的一些信息">216</a>
+              <a class="btn btn-default dorm-btn" data-toggle="popover" data-trigger="hover" title="宿舍信息" data-container="body" data-content="关于宿舍的一些信息">217</a>
+              <a class="btn btn-default dorm-btn" data-toggle="popover" data-trigger="hover" title="宿舍信息" data-container="body" data-content="关于宿舍的一些信息">218</a>
+              <a class="btn btn-default dorm-btn" data-toggle="popover" data-trigger="hover" title="宿舍信息" data-container="body" data-content="关于宿舍的一些信息">219</a>
+              <a class="btn btn-default dorm-btn" data-toggle="popover" data-trigger="hover" title="宿舍信息" data-container="body" data-content="关于宿舍的一些信息">220</a>
+              <a class="btn btn-default dorm-btn" data-toggle="popover" data-trigger="hover" title="宿舍信息" data-container="body" data-content="关于宿舍的一些信息">221</a>
+              <a class="btn btn-default dorm-btn" data-toggle="popover" data-trigger="hover" title="宿舍信息" data-container="body" data-content="关于宿舍的一些信息">222</a>
+              <a class="btn btn-default dorm-btn" data-toggle="popover" data-trigger="hover" title="宿舍信息" data-container="body" data-content="关于宿舍的一些信息">223</a>
+              <a class="btn btn-default dorm-btn" data-toggle="popover" data-trigger="hover" title="宿舍信息" data-container="body" data-content="关于宿舍的一些信息">224</a>
+              <a class="btn btn-default dorm-btn" data-toggle="popover" data-trigger="hover" title="宿舍信息" data-container="body" data-content="关于宿舍的一些信息">225</a>
+              <a class="btn btn-default dorm-btn" data-toggle="popover" data-trigger="hover" title="宿舍信息" data-container="body" data-content="关于宿舍的一些信息">226</a>
+              <a class="btn btn-default dorm-btn" data-toggle="popover" data-trigger="hover" title="宿舍信息" data-container="body" data-content="关于宿舍的一些信息">227</a>
+              <a class="btn btn-default dorm-btn" data-toggle="popover" data-trigger="hover" title="宿舍信息" data-container="body" data-content="关于宿舍的一些信息">228</a>
+              <a class="btn btn-default dorm-btn" data-toggle="popover" data-trigger="hover" title="宿舍信息" data-container="body" data-content="关于宿舍的一些信息">229</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-2">
+        <div class="row">
+          <div class="input-group">
+            <span class="input-group-addon" id="sizing-addon2"><span class="glyphicon glyphicon-search" aria-hidden="true"></span></span>
+            <input type="text" class="form-control" placeholder="宿舍号" aria-describedby="sizing-addon2">
+          </div>
+        </div>
+        <div class="row" style="margin-top: 10px;">
+          <div class="btn-group">
+            <button type="button" class="btn btn-active">向选中宿舍</button>
+            <button type="button" class="btn btn-active dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
+              <span class="caret"></span>
+              <span class="sr-only">Toggle Dropdown</span>
+            </button>
+            <ul class="dropdown-menu" role="menu">
+              <li><a href="#" data-toggle="modal" data-target="#myModal">发送水电费提醒</a></li>
+              <li><a href="#" data-toggle="modal" data-target="#myModal2">发送邮件/快递提醒</a></li>
+              <li><a href="#">发送消息</a></li>
+              <li class="divider"></li>
+              <li><a href="#">标记为已缴费</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="row" style="margin-top: 10px;">
+          <button class="btn btn-active">
+            清除所有选中项
+          </button>
+        </div>
+        <div class="row" style="margin-top: 10px;">
+          <button class="btn btn-active">
+            向未缴费宿舍发送提醒
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="container-fluid" style="margin-top: 20px;">
+    <div class="panel panel-default">
+      <div class="panel-body">
+        SuguanPlus Prototype &copy; 2015
+      </div>
+    </div>
+  </div>
+
+
+  <!-- Modal -->
+  <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+          <h4 class="modal-title" id="myModalLabel">发送提醒</h4>
+        </div>
+        <div class="modal-body">
+          <form>
+            <div class="form-group">
+              <label for="exampleInputEmail1">收件宿舍</label>
+              <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Enter email" value="301; 302; 303">
+            </div>
+            <div class="form-group">
+              <label for="message">消息</label>
+              <textarea class="form-control" name="message" id="" cols="30" rows="4">你们好，本月缴费期限是明晚，请及时缴费。</textarea>
+            </div>
+            <div class="form-group">
+              <div class="alert alert-info" role="alert">缴费金额会自动附加在消息后面。</div>
+            </div>
+          </form>
+        </div>
+
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">关闭</button>
+          <button type="button" class="btn btn-primary">发送</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal fade" id="myModal2" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+          <h4 class="modal-title" id="myModalLabel">发送提醒</h4>
+        </div>
+        <div class="modal-body">
+          <form>
+            <div class="form-group">
+              <label for="exampleInputEmail1">收件宿舍</label>
+              <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Enter email" value="402">
+            </div>
+            <div class="form-group">
+              <label for="message">消息</label>
+              <textarea class="form-control" name="message" id="" cols="30" rows="4">你们好，张三同学的快递到了，在楼下收发室呢。</textarea>
+            </div>
+          </form>
+        </div>
+
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">关闭</button>
+          <button type="button" class="btn btn-primary">发送</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <script src="js/proto.js">
+  </script>
+</body>
+</html>

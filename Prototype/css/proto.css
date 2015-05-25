@@ -1,0 +1,26 @@
+.container-fluid {
+  width: 1200px;
+}
+
+.btn-group-vertical {
+  width: 100%;
+}
+
+.dorm-btn, .btn-head {
+  width: 100%;
+}
+
+a.btn .badge {
+  background-color: red;
+}
+.fixed-side {
+  position: fixed;
+}
+
+.list-group a.list-group-item.unread {
+  border-left-color: #ce4844;
+  border-left-width: 5px;
+}
+.list-group a.list-group-item.unread h4 {
+  color: #ce4844;
+}
